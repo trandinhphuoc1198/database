@@ -1,0 +1,26 @@
+version: "3"
+services:
+  web:
+    image: nginx 
+    volumes: 
+      - ./:/etc/nginx/conf 
+      - /home/g1nta/api_server/restAPI:/var/www/html/ 
+    ports: 
+      - "8080:80" 
+
+  db: 
+    image: ubuntu/mysql 
+    restart: always 
+    volumes:
+      - '/var/log/mysql/mysql.log:/var/log/mysql/mysql.log'
+      
+      - './my.cnf:/etc/mysql/my.cnf'
+      - '/home/g1nta/mysql:/var/lib/mysql'
+    ports: 
+      - '3700:3306' 
+    environment:
+      - MYSQL_USER=test 
+      - MYSQL_PASSWORD=1
+      - MYSQL_ROOT_PASSWORD=1
+    # volumes: 
+    #   - /home/g1nta/mysql:/var/lib/mysql

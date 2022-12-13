@@ -1,0 +1,8 @@
+/usr/sbin/mysqld, Version: 8.0.31-0ubuntu0.22.04.1 ((Ubuntu)). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2022-12-13T13:55:45.611426Z	   10 Query	/* ApplicationName=DBeaver 22.3.0 - SQLEditor <Script.sql> */ SELECT DATABASE()
+2022-12-13T13:55:48.650164Z	   10 Query	/* ApplicationName=DBeaver 22.3.0 - SQLEditor <Script.sql> */ SET SQL_SELECT_LIMIT=200
+2022-12-13T13:55:48.651826Z	   10 Query	/* ApplicationName=DBeaver 22.3.0 - SQLEditor <Script.sql> */ show variables like "%general%"
+2022-12-13T13:55:48.927229Z	   10 Query	/* ApplicationName=DBeaver 22.3.0 - SQLEditor <Script.sql> */ SET SQL_SELECT_LIMIT=DEFAULT
+2022-12-13T13:55:48.928909Z	   10 Query	/* ApplicationName=DBeaver 22.3.0 - SQLEditor <Script.sql> */ SELECT DATABASE()
